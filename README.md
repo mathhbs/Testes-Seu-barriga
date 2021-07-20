@@ -8,6 +8,11 @@ Usei o Framework Cypress pra criar a automação de dois menus do site.
 
 Ao invés de usar o Page objects, vi que poderia usar "cypress curtom commands" para deixar o codigo mais fácil de ser modificado e de ser entendido.
 
-Por não ter um conhecimento muito aprofundado, não pude implementar scripts pra facilitar algumas ações (como por exemplo o editar, criar e deletar contas, que ficariam bem mais simples e poderia ser testadas separadamente sem causar quebras).
+Diante disso, usei o arquivo “commands.js” onde coloquei um método pra fazer o login e outro pra excluir a conta.
+
+Adicionei mais um arquivo o “commandsTransacoes.js” com um método capaz de criar uma transação de receita pendente.
+
+Criei também um arquivo chamado “locators.js”, onde listei todos os locators usados na execução dos testes, com a finalidade de deixar o código (contido nos arquivos “conta.js” e “CriarMovimentacao.js”) mais limpo e compreensível.
+
 
 Instalei um plugin de Xpath, porque eu já tenho um dominio nelas e vi que poderia usar, da mesma forma que já uso no meu trabalho.
